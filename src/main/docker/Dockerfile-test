@@ -1,0 +1,7 @@
+FROM pinpoint-agent:v1
+ENV AGENTID=1
+ENV RUNING="java -javaagent:/pinpoint-agent/pinpoint-bootstrap-1.8.4.jar -Dpinpoint.agentId=gas-server-${AGENTID} -Dpinpoint.applicationName=gas-server -Xmx512m -Djava.security.egd=file:/dev/./urandom -Duser.timezone=GMT+08 -jar /gas-server.jar"
+VOLUME /tmp
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
+ADD  gas-server-1.0-SNAPSHOT.jar gas-server.jar
+ENTRYPOINT ${RUNING}
