@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.tang</groupId>
-    <artifactId>test</artifactId>
+    <artifactId>test-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>test</name>
+    <name>test-server</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

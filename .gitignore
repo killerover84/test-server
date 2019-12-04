@@ -31,3 +31,6 @@ META-INF/MANIFEST.MF
 
 ###db doc###
 *.pdb
+*.md
+/.mvn/
+*.cmd
